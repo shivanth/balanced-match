@@ -6,7 +6,7 @@ Node.js v8
 
 # Install
 ```
-npm install git+https://github.com/shivanth/balanced-match.git
+npm install git+https://github.com/shivanth/balanced-match-native.git
 ```
 # Usage
 
