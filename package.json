@@ -1,5 +1,5 @@
 {
-  "name": "quick-balanced-match",
+  "name": "balanced-match-native",
   "version": "0.0.1",
   "description": "A native balanced-match for node",
   "main": "index.js",
