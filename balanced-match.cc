@@ -46,7 +46,7 @@ napi_value balanced(napi_env env, napi_callback_info info){
                 napi_throw(env,NULL);
         }
 
-        //get c++ values of arguements
+        //get c++ values of arguments
         size_t size1, size2,size3;
         size_t written;
         status = napi_get_value_string_utf8(env, args[0], NULL, 0, &size1);
@@ -83,8 +83,8 @@ napi_value balanced(napi_env env, napi_callback_info info){
 
         //find the pre , body and post of the match using the ranges
         napi_create_string_utf8(env,arg3.substr(0,r[0]).c_str(),r[0],&pre);
-        napi_create_string_utf8(env,arg3.substr(r[0] + size1, r[1] ).c_str(),r[1] - size2 - r[0] ,&body);
-        napi_create_string_utf8(env,arg3.substr(r[1] + 1, size3 - (r[1] + size2 - 1)).c_str(),size3 - (r[1] + size2),&post);
+        napi_create_string_utf8(env,arg3.substr(r[0] + size1 , r[1] - r[0] - size1 ).c_str(),r[1] - r[0] -size1,&body);
+        napi_create_string_utf8(env,arg3.substr(r[1] + size2, size3 - (r[1] + size2 )).c_str(),size3 - (r[1] + size2  ),&post);
         status = napi_create_object(env, &ret);
 
         // create the return object

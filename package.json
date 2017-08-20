@@ -1,0 +1,32 @@
+{
+  "name": "quick-balanced-match",
+  "version": "0.0.1",
+  "description": "A native balanced-match for node",
+  "main": "index.js",
+  "dependencies": {
+    "bindings": "^1.3.0",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "node-gyp": "^3.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --napi-modules",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivanth/balanced-match.git"
+  },
+  "keywords": [
+    "quick",
+    "balanced-match"
+  ],
+  "author": "Shivanth",
+  "license": "ISC",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/shivanth/balanced-match/issues"
+  },
+  "homepage": "https://github.com/shivanth/balanced-match#readme"
+}
