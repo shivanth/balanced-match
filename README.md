@@ -1,4 +1,5 @@
-# balanced-match
+[![Build Status](https://travis-ci.org/shivanth/balanced-match-native.svg?branch=master)](https://travis-ci.org/shivanth/balanced-match-native)
+# Balanced-match 
 A N-API version of https://github.com/juliangruber/balanced-match
 
 # Reuirements
